@@ -407,7 +407,7 @@
             headerElement.appendTo(textElement);
 
             var numberElement = $("<span>");
-            numberElement.css("font-size", Math.round(3 * this.config.text_size * this.data.attributes.item_size));
+            // numberElement.css("font-size", Math.round(3 * this.config.text_size * this.data.attributes.item_size));
             numberElement.css("line-height", Math.round(this.config.text_size * this.data.attributes.item_size) + "px");
             numberElement.appendTo(textElement);
 
