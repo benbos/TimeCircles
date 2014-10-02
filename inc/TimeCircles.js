@@ -605,6 +605,11 @@
             this.data.attributes.context.arc(x, y, this.data.attributes.radius, 0, 2 * Math.PI, false);
             this.data.attributes.context.lineWidth = this.data.attributes.line_width * this.config.bg_width;
 
+            if(this.config.bg_color) {
+                this.data.attributes.context.fillStyle = this.config.bg_color;
+                this.data.attributes.context.fill();
+            }
+
             // line color
             this.data.attributes.context.strokeStyle = this.config.circle_bg_color;
             this.data.attributes.context.stroke();
